@@ -9,8 +9,29 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'DeliMeals',
-      theme: ThemeData(primarySwatch: Colors.blue),
+      title: 'Vamos Cozinhar?',
+      theme: ThemeData(
+        primarySwatch: Colors.pink,
+        colorScheme: ColorScheme.fromSwatch().copyWith(
+          secondary: Colors.amber,
+        ),
+        fontFamily: 'Raleway',
+        canvasColor: const Color.fromRGBO(255, 254, 229, 1),
+        textTheme: ThemeData.light().textTheme.copyWith(
+          titleLarge: const TextStyle(
+            fontSize: 20,
+            fontFamily: 'RobotoCondensed',
+          )
+        ),
+        appBarTheme: const AppBarTheme(
+          titleTextStyle: TextStyle(
+            fontSize: 20,
+            fontFamily: 'Raleway',
+          ),
+          backgroundColor: Colors.pink,
+          foregroundColor: Colors.white,
+        ),
+      ),
       home: const CategoriesScreen(),
     );
   }

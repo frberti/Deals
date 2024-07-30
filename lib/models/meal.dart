@@ -39,4 +39,32 @@ class Meal {
       required this.isVegetarian,
       required this.complexity,
       required this.cost});
+
+
+  get complexityText {
+    switch (complexity) {
+      case Complexity.Simple:
+        return 'Simples';
+      case Complexity.Medium:
+        return 'Normal';
+      case Complexity.Hard:
+        return 'Difícil';
+      default:
+        return 'Desconhecida';
+    }
+  }
+
+  get costText {
+    switch (cost) {
+      case Cost.Cheap:
+        return 'Barato';
+      case Cost.Fair:
+        return 'Justo';
+      case Cost.Expensive:
+        return 'Caro';
+      default:
+        return 'Desconhecido';
+    }
+  }
+
 }

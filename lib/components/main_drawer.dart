@@ -4,10 +4,9 @@ import 'package:meals/utils/app_routes.dart';
 class MainDrawer extends StatelessWidget {
   const MainDrawer({super.key});
 
-  Widget _createItem(
-      {required IconData icon,
-      required String label,
-      required Function() onTap}) {
+  Widget _createItem({required IconData icon,
+    required String label,
+    required Function() onTap}) {
     return ListTile(
       leading: Icon(
         icon,
@@ -26,7 +25,7 @@ class MainDrawer extends StatelessWidget {
   }
 
   void _navigation({required BuildContext context, required String route}) {
-    Navigator.of(context).pushNamed(route);
+    Navigator.of(context).pushReplacementNamed(route);
   }
 
   @override

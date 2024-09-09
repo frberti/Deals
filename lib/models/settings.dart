@@ -1,13 +1,13 @@
 class Settings {
-  bool isGlutenFree;
-  bool isLactoseFree;
-  bool isVegan;
-  bool isVegetarian;
+  bool isGlutenFreeChecked;
+  bool isLactoseFreeChecked;
+  bool isVeganChecked;
+  bool isVegetarianChecked;
 
   Settings({
-    this.isGlutenFree = false,
-    this.isLactoseFree = false,
-    this.isVegan = false,
-    this.isVegetarian = false,
+    this.isGlutenFreeChecked = false,
+    this.isLactoseFreeChecked = false,
+    this.isVeganChecked = false,
+    this.isVegetarianChecked = false,
   });
 }
